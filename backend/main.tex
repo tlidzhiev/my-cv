@@ -1,0 +1,226 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Timur Lidzhiev} \\ \vspace{1pt}
+    % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
+     \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  trlidzhiev@gmail.com} ~
+    \href{https://linkedin.com/in/tlidzhiev}{\raisebox{-0.2\height}\faLinkedin\ tlidzhiev}  ~
+    \href{https://github.com/tlidzhiev}{\raisebox{-0.2\height}\faGithub\ tlidzhiev} ~ \href{https://t.me/trlidzhiev}{\raisebox{-0.05\height}\faTelegram \ @trlidzhiev}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {HSE University}{Sep. 2021 --- Expected June 2025}
+      {Bachelor of Science in Computer Science}{GPA: 8.0/10}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{2}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item Python Programming
+                \item C++ Programming
+                \item Algorithms and Data Structures
+                \item Python for Data Science
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {University Project: PINNs Research}{Nov. 2023 --- Expected May 2024}
+%       {HSE Univeriry}{}
+%       \resumeItemListStart
+%         \resumeItem{Investigating optimal strategies for handling differential equations with discontinuous functions in the Physics Informed Neural Networks (PINNs) project}
+%         \resumeItem{Implementing specialized loss functions that effectively address the challenges posed by the presence of discontinuous functions in the differential equations}
+%         \resumeItem{Evaluating the performance of different numerical methods and algorithms in capturing the behavior of discontinuous functions within the PINNs framework}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading{\textbf{\faGithub \, \href{https://github.com/tlidzhiev/anilib}{\underline{AniLib}}} $|$ \emph{Python, FastAPI, SQLAlchemy, Postgres}}{}
+            \resumeItemListStart
+                \resumeItem{Created a RESTful API using the FastAPI framework to ensure high performance and efficient interaction between the client and server}
+                \resumeItem{Implemented user authentication using JWT (JSON Web Tokens) to ensure security and protect personal information}
+                \resumeItem{Implemented image uploading to S3 Object Storage}
+            \resumeItemListEnd
+
+         \resumeProjectHeading{\textbf{\faGithub \, \href{https://github.com/burnstopper/Quiz}{\underline{Quiz}}} $|$ \emph{Python, FastAPI, SQLAlchemy}}{}
+            \resumeItemListStart
+                \resumeItem{Implemented backend for survey microservice as part of a team for psychology research}
+                \resumeItem{Created a RESTful API using the FastAPI framework to ensure high performance and efficient interaction between the client and server}
+\resumeItemListEnd
+
+        \resumeProjectHeading{\textbf{\faGithub \, \href{https://github.com/tlidzhiev/bmp-image-processor}{\underline{Image Processor}}} $|$ \emph{C++, STL}}{}
+            \resumeItemListStart
+                \resumeItem{Created the console application for BMP image processing}
+                \resumeItem{Implemented kernel filters and a convenient base for creating new filters using std::variant}
+                \resumeItem{Implemented the most efficient filter algorithms}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------INVOLVEMENT---------------
+% \section{Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Teacher Assistant for Numerical Analysis Course}{Jan. 2024 --- June 2024}{HSE University}{}
+%             \resumeItemListStart
+%                 \resumeItem{Develop and administer quizzes, midterm and final exams, and homework assignments}
+%                 \resumeItem{Assess and analyze student performance, providing valuable feedback}
+%                 \resumeItem{Provide professional support to a group of 30 students during weekly consultation sessions, addressing their inquiries, clarifying complex concepts, and assisting them in successfully mastering the course material}
+%             \resumeItemListEnd
+
+%         \resumeSubheading{Teacher Assistant for Math for Data Science Course}{Sep. 2023 --- Jan. 2024}{Yandex School for Data Analysis }{}
+%             \resumeItemListStart
+%                 \resumeItem{Evaluated homework assignments for 50 students in Linear Algebra, Real Analysis, and Probability Theory}
+%                 \resumeItem{Assessed and analyzed student performance, offering valuable feedback}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, SQL} \\
+     \textbf{Frameworks}{: FastAPI, SQLAlchemy, Alembic, Pytest, Sci-Py, Numpy, Pandas} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+\end{document}
