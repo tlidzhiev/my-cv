@@ -115,16 +115,8 @@
 
 
 \begin{document}
-
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     {\Huge \scshape Timur Lidzhiev} \\ \vspace{1pt}
-    % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
      \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  trlidzhiev@gmail.com} ~
     \href{https://linkedin.com/in/tlidzhiev}{\raisebox{-0.2\height}\faLinkedin\ tlidzhiev}  ~
     \href{https://github.com/tlidzhiev}{\raisebox{-0.2\height}\faGithub\ tlidzhiev} ~ \href{https://t.me/trlidzhiev}{\raisebox{-0.05\height}\faTelegram \ @trlidzhiev}
@@ -142,7 +134,6 @@
 
 %------RELEVANT COURSEWORK-------
 \section{Relevant Coursework}
-    %\resumeSubHeadingListStart
         \begin{multicols}{4}
             \begin{itemize}[itemsep=-5pt, parsep=3pt]
                 \item Machine Learning
@@ -156,38 +147,22 @@
             \end{itemize}
         \end{multicols}
         \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {University Project: PINNs Research}{Nov. 2023 --- Expected May 2024}
-      {HSE Univeriry}{}
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading{\textbf{\faGithub \, \href{https://github.com/tlidzhiev/pinn-project}{\underline{University Project: PINNs Research}}} $|$ \emph{}}{}
       \resumeItemListStart
-        \resumeItem{Investigating optimal strategies for handling differential equations with discontinuous functions in the Physics Informed Neural Networks (PINNs) project}
-        \resumeItem{Implementing specialized loss functions that effectively address the challenges posed by the presence of discontinuous functions in the differential equations}
-        \resumeItem{Evaluating the performance of different numerical methods and algorithms in capturing the behavior of discontinuous functions within the PINNs framework}
+        \resumeItem{Implemented integral loss for differential equations with discontinuous solutions in porous fluid systems}
+        \resumeItem{Integral loss form significantly outperformed traditional differential form}
+        \resumeItem{Reduced MSE by 90\% (from $10^{-2.5}$ to $10^{-3.5}$)}
+        \resumeItem{Implemented scalable framework for solving PDEs with high-dimensional spatial domains}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-16pt}
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading{\textbf{\faGithub \, \href{https://github.com/tlidzhiev/bmp-image-processor}{\underline{Image Processor}}} $|$ \emph{C++, STL}}{}
-            \resumeItemListStart
-                \resumeItem{Created the console application for BMP image processing}
-                \resumeItem{Implemented kernel filters and a convenient base for creating new filters using std::variant}
-                \resumeItem{Implemented the most efficient filter algorithms}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
-\vspace{-15pt}
-
-%-----------INVOLVEMENT---------------
+%-----------EXTRACURRICULAR---------------
 \section{Extracurricular}
     \resumeSubHeadingListStart
         \resumeSubheading{Teacher Assistant for Numerical Analysis Course}{Jan. 2024 --- June 2024}{HSE University}{}
