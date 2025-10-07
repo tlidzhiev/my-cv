@@ -1,0 +1,35 @@
+name: Build LaTeX document
+on:
+  push:
+    paths:
+      - ml/main.tex
+      - .github/workflows/ml.yaml
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4.1.1
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: ml
+          root_file: main.tex
+
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF
+          path: ml/main.pdf
+
+      - name: Config git
+        run: |
+            git config --global --add safe.directory $(realpath .)
+            git checkout main
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: ml/main.pdf
+          author_name: Latex Compiler
+          author_email: noreplay@users.noreply.github.com
+          message: Automatically updating the CV
